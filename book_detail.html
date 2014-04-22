@@ -11,14 +11,16 @@
 </head> 
 <body> 
 
-  <div data-role="page" id="bd-1">
+  <div data-role="page" id="bd-1"> 
     
     <div data-role="header">
-      <h1>Book 1</h1>
+      <a href="#" data-rel="back">Back</a>
+      <h1>Mobile First</h1>
     </div><!-- /header -->
 
     <div data-role="content"> 
-    </div><!-- /content -->
+      <a href="#bd-dialog" class="ui-btn ui-btn-active">Checkout</a>
+  </div><!-- /content -->
 
   </div><!-- /page -->
 
@@ -26,7 +28,7 @@
   <div data-role="page" id="bd-2">
     
     <div data-role="header">
-      <h1>Book 2</h1>
+      <h1>Responsive Web Design</h1>
     </div><!-- /header -->
 
     <div data-role="content"> 
@@ -37,7 +39,7 @@
   <div data-role="page" id="bd-3">
     
     <div data-role="header">
-      <h1>Book 3</h1>
+      <h1>CSS3 For Web Designer</h1>
     </div><!-- /header -->
 
     <div data-role="content"> 
@@ -45,6 +47,19 @@
 
   </div><!-- /page -->
 
+  <div data-role="page" id="bd-dialog" data-dialog="true">
+    
+    <div data-role="header">
+      <h1>Checkout</h1>
+    </div><!-- /header -->
+
+    <div data-role="content" data-theme=""> 
+      Do you want to check out ?
+      <a href="#" class="ui-btn">Cancel</a>
+      <a href="#" class="ui-btn ui-btn-active">Confirm</a>
+    </div><!-- /content -->
+
+  </div><!-- /page -->
 
 </body>
 </html>
